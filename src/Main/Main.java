@@ -12,6 +12,17 @@ public class Main {
         VistaTarea vista = new VistaTarea();
         ControladorTarea controlador = new ControladorTarea(vista);
 
+        
+/**
+ *
+ * @author usuri
+ */
+import Vista.VistaTarea;
+
+public class Main {
+    public static void main(String[] args) {
+        VistaTarea vista = new VistaTarea();
+
         vista.setVisible(true);
     }
 }

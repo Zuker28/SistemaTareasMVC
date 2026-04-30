@@ -17,7 +17,7 @@ public class VistaTarea extends JFrame {
 
     public JTextField txtCodigo, txtTitulo, txtCurso, txtFecha;
     public JComboBox<String> cbEstado;
-    public JButton btnRegistrar;
+    public JButton btnRegistrar, btnEliminar, btnBuscar;
 
     public VistaTarea() {
         setTitle("Sistema de Tareas");
@@ -68,5 +68,13 @@ public class VistaTarea extends JFrame {
         btnRegistrar = new JButton("Registrar");
         btnRegistrar.setBounds(120, 220, 120, 30);
         add(btnRegistrar);
+        
+        btnEliminar = new JButton("Eliminar");
+        btnEliminar.setBounds(260, 220, 100, 30);
+        add(btnEliminar);
+
+        btnBuscar = new JButton("Buscar");
+        btnBuscar.setBounds(20, 220, 100, 30);
+        add(btnBuscar);
     }
 }

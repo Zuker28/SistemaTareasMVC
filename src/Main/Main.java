@@ -2,15 +2,16 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Main;
+package main;
 
-/**
- *
- * @author usuri
- */
+import Vista.VistaTarea;
+import controlador.ControladorTarea;
+
 public class Main {
-
     public static void main(String[] args) {
-        System.out.println("Sistema iniciado");
+        VistaTarea vista = new VistaTarea();
+        ControladorTarea controlador = new ControladorTarea(vista);
+
+        vista.setVisible(true);
     }
 }

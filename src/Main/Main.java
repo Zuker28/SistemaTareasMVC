@@ -8,9 +8,11 @@ package Main;
  *
  * @author usuri
  */
-public class Main {
+import Vista.VistaTarea;
 
+public class Main {
     public static void main(String[] args) {
-        System.out.println("Sistema iniciado");
+        VistaTarea vista = new VistaTarea();
+        vista.setVisible(true);
     }
 }
